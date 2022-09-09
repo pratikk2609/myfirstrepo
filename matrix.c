@@ -1,52 +1,50 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int a[2][3], b[2][3], c[2][3], i, j;
-    printf("Enter first matrix:\n");
-    for(i=0;i<2;i++)
+    int i, j, a[2][2], sum = 0;
+    printf("enter the matrix:\n");
+    for (i = 0; i < 2; i++)
     {
-        for(j=0;j<3;j++)
+        for (j = 0; j < 2; j++)
         {
             scanf("%d", &a[i][j]);
         }
     }
-
-    printf("Enter second matrix:\n");
-    for(i=0;i<2;i++)
+    printf("the resultant matrix:\n");
+    for (i = 0; i < 2; i++)
     {
-        for(j=0;j<3;j++)
-        {
-            scanf("%d", &b[i][j]);
-        }
-    }
-
-printf("first matrix is:\n");
-    for(i=0;i<2;i++)
-    {
-        for(j=0;j<3;j++)
+        sum = 0;
+        for (j = 0; j < 2; j++)
         {
             printf("%d\t", a[i][j]);
+            sum += a[i][j];
         }
+        printf("%d", sum);
         printf("\n");
     }
 
-    printf("second matrix is:\n");
-    for(i=0;i<2;i++)
+    for (j = 0; j < 2; j++)
     {
-        for(j=0;j<3;j++)
+        sum = 0;
+        for (i = 0; i < 2; i++)
         {
-            printf("%d\t", b[i][j]);
+            sum += a[i][j];
         }
-        printf("\n");
+        printf("%d\t", sum);
     }
-    printf("The sum matrix is:\n");
-    for(i=0;i<2;i++)
+    sum = 0;
+
+    for (i = 0; i < 2; i++)
     {
-        for(j=0;j<3;j++)
+        for (j = 0; j < 2; j++)
         {
-            c[i][j]=a[i][j]+b[i][j];
-            printf("%d\t", c[i][j]);
+            if (i == j)
+            {
+                sum += a[i][j];
+            }
         }
-        printf("\n");
     }
+    printf("%d", sum);
+
+    return 0;
 }
