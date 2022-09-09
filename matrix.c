@@ -17,7 +17,7 @@ int main()
         for (j = 0; j < 2; j++)
         {
             printf("%d\t", a[i][j]);
-            
+
             sum += a[i][j];
         }
         printf("%d", sum);
@@ -46,6 +46,6 @@ int main()
         }
     }
     printf("%d", sum);
-
+    printf("end of program");
     return 0;
 }
