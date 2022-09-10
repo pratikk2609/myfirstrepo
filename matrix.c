@@ -46,6 +46,6 @@ int main()
         }
     }
     printf("%d", sum);
-    printf("end of program");
+    printf("end of program\n");
     return 0;
 }
