@@ -45,6 +45,6 @@ int main()
             }
         }
     }
-    printf("%d", sum);
+    printf("%d\t", sum);
     return 0;
 }
