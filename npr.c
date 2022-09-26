@@ -21,11 +21,17 @@ int calculatenpr(int n, int r)
 int main() 
 {
     int n, p, npr, fact, i, r;
-    printf("enter a number n:");
-    scanf("%d", &n);
-    printf("enter a number r:");
-    scanf("%d", &r);
-    npr = calculatenpr(n, r);
-    printf("value of %dp%d=%d\n", n, r, npr);
-    
+    char ans ='y';
+    do
+    {
+        printf("enter a number n:");
+        scanf("%d", &n);
+        printf("enter a number r:");
+        scanf("%d", &r);
+        npr = calculatenpr(n, r);
+        printf("value of %dp%d=%d\n", n, r, npr);
+        printf("do you want to continue?");
+        scanf("%s",&ans);
+    } while(ans =='y');
+    return 0;
 }
