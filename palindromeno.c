@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h> //palindrome is a no which is same if we read from start or end
 #include<conio.h>
 
 void main()
