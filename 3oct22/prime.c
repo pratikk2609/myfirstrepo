@@ -1,10 +1,11 @@
 #include <stdio.h>
-#include <stdbool.h>
 
-bool isPrimeNumber(int n)
+int main()
 {
-    int i;
-    bool result = true;
+    int n, i;
+    printf("enter a number to check prime:");
+    scanf("%d", &n);
+    
     if (n == 1)
     {
         printf("1 is neither prime nor composite");
@@ -14,31 +15,12 @@ bool isPrimeNumber(int n)
     {
         if (n % i == 0)
         {
-            result = false;
+            printf("no is not prime");
             break;
         }
     }
     if (i == n / 2)
     {
-        result= true;
+        printf("no is prime");
     }
-    return result;
-}
-
-int main()
-{
-    int n, i;
-    printf("enter a number to check prime:");
-    scanf("%d", &n);
-    //int result = isPrimeNumber(n);
-    if(isPrimeNumber(n) == true)
-    {
-        printf("number is prime");
-    }
-    else
-    {
-        printf("number is not prime");
-    }
-    
-    return 0;
 }
