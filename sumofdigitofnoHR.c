@@ -6,8 +6,8 @@
 int main()
 {
     int n, a, sum=0;
-    scanf("%d", &n);
-
+    //scanf("%d", &n);
+    n=13456;
     while(n!=0)
     {
         a=n%10;

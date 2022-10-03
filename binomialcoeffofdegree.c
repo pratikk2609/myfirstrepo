@@ -25,7 +25,7 @@ int main()
     int n, i, fact;
     printf("enter the coefficient : ");
     scanf("%d", &n);
-
+    
     for (i = 1; i <= n + 1; i++)
     {
         // fact = factorial(i);
