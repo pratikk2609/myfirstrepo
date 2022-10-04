@@ -6,5 +6,4 @@ int main()
     //char ch='A';
     //printf("%c", ch+32);
 
-
 }
