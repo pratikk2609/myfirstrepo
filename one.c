@@ -6,10 +6,8 @@ int main()
     {
         for (j = 2; j <= 10; j++)
         {
-    
-                product = i * j;
-                printf("%d\t", product);
-            
+            product = i * j;
+            printf("%d\t", product);
         }
         printf("\n");
     }
