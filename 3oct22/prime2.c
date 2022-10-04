@@ -20,26 +20,26 @@ bool isPrimeNumber(int n)
     }
     if (i == n / 2)
     {
-        result= true;
+        result = true;
     }
     return result;
 }
 
 int main()
 {
-    int n, i;
-    printf("enter a number to check prime:");
+    int n, i, sum = 0;
+    printf("Until what number you want to find prime numbers:");
     scanf("%d", &n);
-    //int result = isPrimeNumber(n);
-    
-    if(isPrimeNumber(n) == true)
+    // int result = isPrimeNumber(n);
+
+    for (i = 2; i < n; i++)
     {
-        printf("number is prime");
+        if (isPrimeNumber(i) == true)
+        {
+            printf("%d ", i);
+            sum = sum + i;
+        }
     }
-    else
-    {
-        printf("number is not prime");
-    }
-    
+    printf("\nSum of all prime numbers upto %d is %d", n, sum);
     return 0;
 }
