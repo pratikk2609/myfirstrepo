@@ -10,7 +10,7 @@ int main()
             if (i == 1 || i == n || j == 1 || j == n)
                 printf("* ");
             else
-                printf("  ");
+                printf("  "); // for"#" use at the place of space.
         }
         printf("\n");
     }
