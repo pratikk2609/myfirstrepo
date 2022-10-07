@@ -15,7 +15,7 @@ int main()
     int tostrike;
     int ATMstrike;
     struct strike st[20];
-    printf("\nenter from strike:");
+    printf("enter from strike:");
     scanf("%d", &fromstrike);
     printf("\nenter to strike:");
     scanf("%d", &tostrike);
@@ -30,18 +30,18 @@ int main()
     printf("what is the ATM strike:");
     scanf("%d", &ATMstrike);
     for (i = 0; i < ((tostrike - fromstrike) / 100) + 1; i++)
-    { 
-        if(ATMstrike==st[i].strikenum)
+    {
+        if (ATMstrike == st[i].strikenum)
         {
             printf("\n %f\t %d\t  %f", st[i].CEValue, st[i].strikenum, st[i].PEValue);
         }
-        else if (ATMstrike<st[i].strikenum)
+        else if (ATMstrike < st[i].strikenum)
         {
             printf("\n \t\t %d\t  %f", st[i].strikenum, st[i].PEValue);
         }
         else
         {
-             printf("\n %f\t %d\t \t", st[i].CEValue, st[i].strikenum);
+            printf("\n %f\t %d\t \t", st[i].CEValue, st[i].strikenum);
         }
     }
 
