@@ -11,6 +11,7 @@ int main()
     {
         scanf("%d", &array[i]);
     }
+
     for (i = 0; i < n - 1; i++)
     {
         for (j = 0; j < n - 1 - i; j++)
@@ -21,8 +22,12 @@ int main()
                 array[j] = array[j + 1];
                 array[j + 1] = swap;
             }
+
         }
+
+
     }
+    
     printf("ascending order is :");
 
     for (i = 0; i < n; i++)

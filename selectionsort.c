@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main()
 {
-    int a[100], n, i, j, min, swap;
+    int a[10], n, i, j, min, swap;
     printf("Enter number of elements\n");
     scanf("%d", &n);
     printf("Enter %d Numbers\n", n);
