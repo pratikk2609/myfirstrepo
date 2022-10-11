@@ -1,5 +1,6 @@
-#include<stdio.h>
-#include<stdlib.h>
+//return pointer to structure using function
+#include <stdio.h>
+#include <stdlib.h>
 
 struct point
 {
@@ -7,11 +8,11 @@ struct point
     int y;
 };
 
-struct point * fun(int a , int b)
+struct point *fun(int a, int b)
 {
     struct point *ptr = (struct point *)malloc(sizeof(struct point));
-    ptr->x=a;
-    ptr->y=b+5;
+    ptr->x = a;
+    ptr->y = b + 5;
     return ptr;
 }
 
@@ -23,8 +24,8 @@ void print(struct point *ptr)
 int main()
 {
     struct point *ptr1, *ptr2;
-    ptr1=fun(2,3);
-    ptr2=fun(6,9);
+    ptr1 = fun(2, 3);
+    ptr2 = fun(6, 9);
     print(ptr1);
     print(ptr2);
     free(ptr1);
