@@ -1,5 +1,5 @@
-// usng pointers to access the array elements
-// strings
+//using pointers to access the array elements.
+//strings
 
 #include <stdio.h>
 int main()
